@@ -1,0 +1,39 @@
+.pageContainer{
+    margin:0px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraphWrapper{
+    background-color: transparent;
+    
+}
+
+.text{
+    color:white;
+    /* max-width:300px; */
+    background-color: transparent;
+     overflow: hidden;
+     margin: 0 auto;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    border-right: .15em solid orange;
+   
+    animation: letters 3.5s steps(40, end),blink .75s step-end infinite;
+    
+}
+/* .pageContainer p{
+   
+} */
+
+@keyframes letters{
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

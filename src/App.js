@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import LandingPage from './landingpage/landingPage';
+import Homepage from './homepage/homepage';
+import Navbar from './Navbar/navbar';
+import UnderConstruction from './underConstruction/underconstruction';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <div className="App">
+        <section>
+          <LandingPage />
+        </section>
+        <section>
+          <div id="UnderConstruction">
+            <UnderConstruction />
+          </div>
+
+          {/* <Homepage /> */}
+        </section>
+      </div>
+
   );
 }
 
