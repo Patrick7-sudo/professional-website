@@ -12,23 +12,20 @@ function UnderConstruction(){
     useEffect(()=>{
         
 
-        gsap.to(hello.current, {
+        gsap.to(hello.current,{
           // paused: true,
           scrollTrigger: {
             trigger: hello.current,
             toggleClass: `${Style.text}`,
-            
           },
-        });
+        })
+      
     },[]);
     console.log(`${Style.text}`)
     return (
       <div className={Style.pageContainer}>
         <div className={Style.paragraphWrapper}>
-          <p  ref={hello}>
-            
-            Page under Construction
-          </p>
+          <p ref={hello}>Page under Construction</p>
         </div>
       </div>
     );
