@@ -1,6 +1,6 @@
 import Style from "./under.module.css"
 import  {gsap} from "gsap";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef,useState} from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 function UnderConstruction(){
   let hello = useRef(null);
+  const [widthwork, setWidthwork] = useState(window.innerHeight);
  
     useEffect(()=>{
         
@@ -19,11 +20,22 @@ function UnderConstruction(){
             toggleClass: `${Style.text}`,
           },
         })
-      
+     
     },[]);
+
+    useEffect(()=>{
+      function allo(){
+        setWidthwork(window.innerHeight);
+      }
+
+      window.addEventListener("resize", allo);
+
+      allo()
+    },[widthwork])
     console.log(`${Style.text}`)
+    console.log(widthwork);
     return (
-      <div className={Style.pageContainer}>
+      <div className={Style.pageContainer}style={{height:widthwork}}>
         <div className={Style.paragraphWrapper}>
           <p ref={hello}>Page under Construction</p>
         </div>

@@ -1,9 +1,12 @@
 import Styles from './landingPage.module.css'
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
+import {useState,useEffect} from "react"
 
 function LandingPage(){
     let lines=[]
+    const [widthwork,setWidthwork]=useState(window.innerWidth);
+
     
     function arrow(){
         let line = 220;
@@ -15,8 +18,22 @@ function LandingPage(){
     }
     arrow()
 
+        useEffect(() => {
+          function allo() {
+            setWidthwork(window.innerHeight);
+          }
+
+          window.addEventListener("resize", allo);
+
+          allo();
+        }, [widthwork]);
+
     return (
-      <div className={Styles.landingPage} data-testid="landingPage">
+      <div
+        className={Styles.landingPage}
+        data-testid="landingPage"
+        style={{ height: widthwork }}
+      >
         <div className={Styles.landingPageWrapper} data-testid="welcomeTag">
           <div className={Styles.text_welcome_wrapper}>
             <p>

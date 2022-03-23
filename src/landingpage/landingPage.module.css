@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
 
 .landingPage{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     display: flex;
     flex-direction: column;
