@@ -6,20 +6,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    position:relative;
+    min-height:500px;  
 }
 
 /* **************************** welcome statment ******************** */
 .landingPageWrapper{
-    background-color: black;
+    background-color: transparent;
     height:auto;
     /* height: 400px;
     margin: 3rem; 
     overflow: hidden;
     text-align: center; */
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .text_welcome_wrapper{
@@ -63,6 +63,7 @@
  }
 
  .arrow{
+   margin: 0;
    background-color: black;
    height: auto;
    display: flex;

@@ -35,9 +35,11 @@ function UnderConstruction(){
     console.log(`${Style.text}`)
     console.log(widthwork);
     return (
-      <div className={Style.pageContainer}style={{height:widthwork}}>
-        <div className={Style.paragraphWrapper}>
-          <p ref={hello}>Page under Construction</p>
+      <div style={{display:'block'}}>
+        <div className={Style.pageContainer} style={{ height: widthwork }}>
+          <div className={Style.paragraphWrapper}>
+            <p ref={hello}>Page under Construction</p>
+          </div>
         </div>
       </div>
     );
