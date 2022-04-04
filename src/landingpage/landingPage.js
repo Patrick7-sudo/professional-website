@@ -45,7 +45,7 @@ function LandingPage(){
               </p>
             </div>
 
-            <Link to="UnderConstruction" spy={true} smooth={true}>
+            <Link to="HomePage" spy={true} smooth={true}>
               <div className={Styles.arrow} data-testid="arrowWrapper">
                 <div
                   onClick={() => {

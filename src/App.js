@@ -9,20 +9,19 @@ import UnderConstruction from './underConstruction/underconstruction';
 
 function App() {
   return (
-
-      <div className="App">
-        <section>
-          <LandingPage />
-        </section>
-        <section>
-          <div id="UnderConstruction">
-            <UnderConstruction />
-          </div>
-
-          {/* <Homepage /> */}
-        </section>
-      </div>
-
+    <div className="App">
+      <section id="LandingPage">
+        <LandingPage />
+      </section>
+      <section>
+        <div id="HomePage">
+          <Homepage />
+        </div>
+        <div id="UnderConstruction">
+          <UnderConstruction />
+        </div>
+      </section>
+    </div>
   );
 }
 

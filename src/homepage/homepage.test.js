@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Homepage from "./homePage";
 
+
 test("renders the whole homepage main", () => {
   render(<Homepage />);
   const homePageMainWrapper = screen.getByTestId("homepage_main_wrapper");
@@ -8,7 +9,7 @@ test("renders the whole homepage main", () => {
 
   expect(homePageMainWrapper).toHaveClass("homepage_main_wrapper");
 });
-
+  
 test("renders the whole homepage main wrapper", () => {
   render(<Homepage />);
   const homePageMain = screen.getByTestId("homepage_main");

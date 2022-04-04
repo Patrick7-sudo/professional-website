@@ -32,8 +32,8 @@ function UnderConstruction(){
 
       allo()
     },[widthwork])
-    console.log(`${Style.text}`)
-    console.log(widthwork);
+   
+  // console.log(widthwork)
     return (
       <div style={{display:'block'}}>
         <div className={Style.pageContainer} style={{ height: widthwork }}>
