@@ -6,6 +6,12 @@
     background-color: black;
     /* height:100vh; */
     min-height: 200px;
+    overflow:scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.homepage_main_wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .homepage_main{
@@ -14,7 +20,7 @@
 }
 /* container */
 .homepage_navbarHolder{
-    background-color: black;
+    background-color: transparent;
     height:auto;
     display: flex;
     justify-content: flex-end;
@@ -578,6 +584,7 @@
   text-transform: capitalize;
   text-align: start;
   margin:1rem;
+  cursor: default;
 }
 .textHolder_welcome p{
   margin:0px;
@@ -596,6 +603,7 @@
   margin:0px;
   letter-spacing: 1px;
   line-height: 50px;
+  cursor: default;
 }
 .textHolder_highLight{
   /* border-top:1px solid white; */
@@ -767,6 +775,9 @@ background-image: linear-gradient(
   .homepage_textHolder{
     margin:0px;
   }
+ .homepage_textHolder{
+    background-color: black;
+  }
 }
 @media screen and (max-width:500px) {
   /* .textHolder_wrapper{
@@ -796,6 +807,7 @@ background-image: linear-gradient(
   .textHolder_highLight{
     font-size: 16px;
   }
+  
 
 }
 
@@ -947,7 +959,12 @@ background-image: linear-gradient(
   position: absolute;
   /* top:80%; */
   bottom:13%;
-  transition: all 3s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor:pointer;
+    left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
 }
 /* .paginationPageNumActive{
   filter: drop-shadow(5px 5px 10px #ffffff);
@@ -956,9 +973,8 @@ background-image: linear-gradient(
   /* bottom:70%; */
   /* bottom:13%; */
   background-Color: white;
-  transition: all 3s ease-in-out;
-  filter: drop-shadow(5px 5px 10px #ffffff);
-
-      
+  transition: all 1s ease-in-out;
+  -webkit-box-shadow: 0px 0px 50px 10px #FFFFFF; 
+  box-shadow: 0px 0px 50px 10px #FFFFFF;     
 }
 /* end of pagination */

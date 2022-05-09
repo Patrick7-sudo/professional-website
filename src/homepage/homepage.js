@@ -116,9 +116,9 @@ function Homepage(){
   useEffect(()=>{
      gsap.fromTo(
        num1.current,
-       { bottom: "13%" },
+       { bottom: "13%",duration: 1 },
        {
-         duration: 2,
+         duration: 1,
          bottom: "70%",
          scrollTrigger: {
            trigger: num1.current,
@@ -152,7 +152,7 @@ function Homepage(){
         }
       }
       setArrayTraingle(nums);
-     console.log(nums);
+    //  console.log(nums);
     }
     
     toTwenty()
@@ -162,7 +162,7 @@ function Homepage(){
      const interval = setInterval(() => {
       let numArry=[];
       
-      for(let i=0; i<15;i++){
+      for(let i=0; i<3;i++){
         numArry.push(Math.floor(Math.random() * arrayTriangle.length))
       }
       
@@ -172,7 +172,7 @@ function Homepage(){
      return () => clearInterval(interval);
    }, [arrayTriangle]);
    
- console.log(count)
+//  console.log(count)
   
 
     return (
@@ -187,7 +187,7 @@ function Homepage(){
         <div className={Styles.homepage_main} data-testid="homepage_main">
           <div
             className={Styles.homepage_navbarHolder}
-            data-testid="homepage_navbarHolder"
+            data-testid="homepage_navbarHolder" style={{'position':'fix'}}
           >
             <div className={Styles.homepage_navbarContainer}>
               <div
@@ -212,7 +212,7 @@ function Homepage(){
                 >
                   <li className={Styles.homepage_navbarli}>
                     <Link
-                      to="LandingPage"
+                      to="AboutMe"
                       spy={true}
                       smooth={true}
                       onClick={() => {

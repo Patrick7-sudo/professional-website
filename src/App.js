@@ -1,25 +1,25 @@
-import './App.css';
+import style from './App.module.css';
 import LandingPage from './landingpage/landingPage';
 import Homepage from './homepage/homepage';
-import Navbar from './Navbar/navbar';
 import UnderConstruction from './underConstruction/underconstruction';
-
+import AboutMe from './aboutme/aboutme';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <section id="LandingPage">
+    <div className={style.App}>
+      <section className={style.snapping} id="LandingPage">
         <LandingPage />
       </section>
-      <section>
-        <div id="HomePage">
-          <Homepage />
-        </div>
-        <div id="UnderConstruction">
-          <UnderConstruction />
-        </div>
+      <section className={style.snapping} id="HomePage">
+        <Homepage />
+      </section>
+      <section className={style.snapping} id="AboutMe">
+        <AboutMe />
+      </section>
+      <section className={style.snapping} id="UnderConstruction">
+        <UnderConstruction />
       </section>
     </div>
   );

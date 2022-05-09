@@ -1,0 +1,36 @@
+.aboutmecontentwrapper{
+    background-color: transparent;
+    /* transition: all 1s; */
+}
+
+
+.headerdesign{
+    background-color: transparent;
+    text-align: left;
+    margin:1rem;
+    font-size:7vh;
+    color:white;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+.para{
+    background-color: transparent;
+    margin:1rem;
+    transition: all 1s;
+    color:white;
+    text-align: left;
+    overflow: scroll;
+    line-height: 32px;
+
+}
+/* .para:hover{
+    line-height:20px;
+    transition: all 1s;
+} */
+
+@media  screen and (max-width:1200px) {
+    .para{
+        max-height:200px;
+    }
+}
